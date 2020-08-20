@@ -21,7 +21,6 @@ Talvez seja necessário reconhecer o Certificado Digital como seguro. Pode ser f
 O teste da API pode ser feito pela interface do Swagger Disponível pela URL  [http://localhost:8080/agronegocio/v1/swagger-ui/](http://localhost:8080/agronegocio/v1/swagger-ui/)
 
 ### Release
-O release está disponível pela URL  [v1](http://localhost:8080/agronegocio/v1/swagger-ui/), baixe o agronegocio.v1.zip, siga as orientações.
+O release está disponível pela URL  [v1](https://github.com/renatooa/spring-boot-agronegocio/releases/tag/v1), siga as orientações de instalação e testes
 
-- __agronegocio-0.0.1-SNAPSHOT.jar__ - Servidor do Agronegocio
-- __admin-0.0.1-SNAPSHOT.jar__ - Servidor de monitoramento 
+
