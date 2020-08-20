@@ -67,4 +67,8 @@ public class Fazenda {
 		animal.setFazenda(this);
 		animais.add(animal);
 	}
+
+	public boolean isContemAnimais() {
+		return animais != null && !animais.isEmpty();
+	}
 }

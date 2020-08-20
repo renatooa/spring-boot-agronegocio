@@ -1,7 +1,9 @@
 package br.com.renato.agronegocio.model.dto;
 
 import br.com.renato.agronegocio.model.entity.Animal;
+import io.swagger.annotations.ApiModel;
 
+@ApiModel("Animal")
 public class AnimalDto extends AnimalForm {
 
 	private Long id;

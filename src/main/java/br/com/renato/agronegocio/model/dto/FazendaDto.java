@@ -3,7 +3,9 @@ package br.com.renato.agronegocio.model.dto;
 import java.util.stream.Collectors;
 
 import br.com.renato.agronegocio.model.entity.Fazenda;
+import io.swagger.annotations.ApiModel;
 
+@ApiModel("Fazenda")
 public class FazendaDto extends FazendaForm<AnimalDto> {
 
 	private Long id;

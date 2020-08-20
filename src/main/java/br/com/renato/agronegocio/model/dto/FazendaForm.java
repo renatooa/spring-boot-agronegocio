@@ -2,14 +2,23 @@ package br.com.renato.agronegocio.model.dto;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
-import br.com.renato.agronegocio.model.entity.Fazenda;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
+@ApiModel("Fazenda Form")
 public class FazendaForm<T extends AnimalForm> {
 
+	@NotNull
+	@NotBlank
+	@ApiModelProperty(name = "Nome da Fazenda", example = "Fazenda Rio Grande")
 	private String nome;
 
+	@NotNull
+	@Size(min = 1)
 	private List<T> animais;
 
 	public FazendaForm() {
@@ -35,18 +44,5 @@ public class FazendaForm<T extends AnimalForm> {
 
 	public void setAnimais(List<T> animais) {
 		this.animais = animais;
-	}
-
-	@JsonIgnore
-	public Fazenda toFazenda() {
-
-		Fazenda fazenda = new Fazenda(nome);
-
-		if (animais != null && animais.size() > 0) {
-			animais.forEach(animal -> {
-				fazenda.addAnimal(animal.toAnimal());
-			});
-		}
-		return fazenda;
 	}
 }
