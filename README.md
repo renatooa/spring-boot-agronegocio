@@ -14,12 +14,14 @@ Projeto elaborado utilizando Spring Boot versão 2.3.3, utilizando a pilha tecno
 
 ### Observações
 Consta no projeto o arquivo data.sql, este arquivo é responsável pela criação de dados no arranque da Web API. Caso o banco tenha sido criado anteriormente, será exibido um erro em console que pode ser desprezado, pois refere-se a nova tentativa de criar os dados.
-Talvez seja necessário reconhecer o Certificado Digital como seguro. Pode ser feito pelo Browser acessando a URL de documentação da API.
+*Testes Unitários no projeto 
 
 ### Teste da WebApi
 O teste da API pode ser feito pela interface do Swagger Disponível pela URL  [http://localhost:8080/agronegocio/v1/swagger-ui/](http://localhost:8080/agronegocio/v1/swagger-ui/)
 
 ### Release
 O release está disponível pela URL  [v1](https://github.com/renatooa/spring-boot-agronegocio/releases/tag/v1), siga as orientações de instalação e testes
+
+
 
 
